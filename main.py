@@ -71,11 +71,7 @@ class Conversation(VanessasCore):
             self.__send_text(chat_id, zmiysphrases[randint(0, 14)])
 
 
-class Private(VanessasCore):
-    pass
-
-
-class Launcher(Conversation, Private):
+class Launcher(Conversation):
 
     def run(self):
         print("Server started")
